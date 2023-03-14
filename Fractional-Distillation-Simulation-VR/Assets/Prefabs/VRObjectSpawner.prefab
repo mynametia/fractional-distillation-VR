@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3444715584772670389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3444715584772670391}
+  - component: {fileID: 3444715584772670388}
+  - component: {fileID: 3444715584772670385}
+  - component: {fileID: 3444715584772670390}
+  - component: {fileID: 8363520886503656135}
+  m_Layer: 0
+  m_Name: VRObjectSpawner
+  m_TagString: objectSpawner
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3444715584772670391
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3444715584772670389}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3444715584772670388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3444715584772670389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feae14cfb68afb44f8924b8001578ac3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columnPrefab: {fileID: 3071201703207794711, guid: 10cd8097ddcc10e4ea4be3fce9da5949,
+    type: 3}
+  rightTrayPrefab: {fileID: 6179721874476507909, guid: 986c74c07db2d8c43a55a64f9bf4e75e,
+    type: 3}
+  leftTrayPrefab: {fileID: 4385688548213809538, guid: b9c4e7fd8aae7da4c83971c0698d5698,
+    type: 3}
+  feedPrefab: {fileID: 8014500889222462695, guid: 685abb32946dac14a855a7c0912f99e9,
+    type: 3}
+  reboilerPrefab: {fileID: 6183119171300404886, guid: 39640e546a090d842a764622abe39f02,
+    type: 3}
+  condenserPrefab: {fileID: 6325953500398749587, guid: d006719ffb6c8bf4895b967b706679e2,
+    type: 3}
+  trayNumber: 0
+  feedPosition: 0
+  condenserYPos: 0
+--- !u!114 &3444715584772670385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3444715584772670389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d128828e562f842a5019f23c5ab4e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: 0
+  feedR: 0
+  Fd: 0
+  Fb: 0
+  Xf: 0
+  R: 0
+  Vb: 0
+  XD: 0
+  D: 0
+  xB: 0
+  upperLimit: 0
+  trayNumber: 8
+  feedPosition: 4
+  successD: 0
+  successXD: 0
+  successXB: 0
+  XvariableList: []
+  YvariableList: []
+  calculating: 0
+--- !u!114 &3444715584772670390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3444715584772670389}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d4f7e5ee8693e4fb9639e7d0969906, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feedLiquidPrefab: {fileID: 3219503338086464332, guid: 39cb751f92cdb5d45987acf515e3e9ad,
+    type: 3}
+  waterSurfacePrefab: {fileID: 469299167433698706, guid: 12090b381f30e5f4a8b4628a801edb75,
+    type: 3}
+  leftTrayLiquid: {fileID: 4361565645819028373, guid: c88b27013fc740c479a53ec7b63b93a6,
+    type: 3}
+  rightTrayLiquid: {fileID: 4361565645819028373, guid: 640abb18accd8b249946e16c100d1ea9,
+    type: 3}
+  reboilerLiquidPrefab: {fileID: 6426669592371658117, guid: 5c5290c76bdf7ea49ba63da61357c79f,
+    type: 3}
+  condenserLiquidPrefab: {fileID: 6661918959960175871, guid: 030d540a59062004f81a73e03762325f,
+    type: 3}
+  SCALE: 1
+--- !u!114 &8363520886503656135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3444715584772670389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0b91b527fd0a44c81066ad4cb602cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feedLiquidPrefab: {fileID: 3219503338086464332, guid: 39cb751f92cdb5d45987acf515e3e9ad,
+    type: 3}
+  waterSurfacePrefab: {fileID: 469299167433698706, guid: 12090b381f30e5f4a8b4628a801edb75,
+    type: 3}
+  leftTrayLiquid: {fileID: 4361565645819028373, guid: c88b27013fc740c479a53ec7b63b93a6,
+    type: 3}
+  rightTrayLiquid: {fileID: 4361565645819028373, guid: 640abb18accd8b249946e16c100d1ea9,
+    type: 3}
+  reboilerLiquidPrefab: {fileID: 6426669592371658117, guid: 5c5290c76bdf7ea49ba63da61357c79f,
+    type: 3}
+  condenserLiquidPrefab: {fileID: 6661918959960175871, guid: 030d540a59062004f81a73e03762325f,
+    type: 3}
+  SCALE: 1
+  trayNumber: 0
+  feedPosition: 0
+  fPos: 0
